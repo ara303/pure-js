@@ -1,0 +1,26 @@
+<form class="contact-form" action="YOUR_SERVER_HANDLER_ENDPOINT_HERE">
+  <div class="success-wrapper" style="display: none;">
+    <p>Message successfully sent.</p>
+  </div>
+  <div class="errors-wrapper" style="display: none;">
+    <p>Something went wrong.</p>
+    <ul class="errors-list"></ul>
+  </div>
+  <label class="form-section-name"> 
+    <div class="label">Your name</div>
+    <input name="name" type="text">
+  </label>
+  <label class="form-section-email">
+    <div class="label">Your email address</div>
+    <input name="email" type="email">
+  </label>
+  <label class="form-section-phone">
+    <div class="label">Your phone number</div>
+    <input name="phone" type="phone">
+  </label>
+  <label class="form-section-message">
+    <div class="label">How can we help?</div>
+    <textarea name="message"></textarea>
+  </label>
+  <button class="send-button" type="submit">Send</button>
+</form>
