@@ -1,15 +1,13 @@
 # Pure JS
 *Replicating useful functions of jQuery in pure (vanilla) JavaScript.*
 
------
-
-### Scroll to top
+## Scroll to top
 Animated scroll to the top of the document with a trigger element. The duration is adjustable (`400ms` by default).
 
 As a bonus, includes code to reveal the trigger only when the user is a certain way down the page. 
 
-### AJAX form submit
-Ssubmit a form to a server via AJAX and then display success/failure messages. Below are examples of the JSON my server sends back.
+## AJAX form submit
+Submit a form to a server via AJAX and then display success/failure messages. Below are examples of the JSON my server sends back.
 
 This is done because I validate the submission server side and the response will contain error messages.
 
@@ -21,7 +19,7 @@ If the submission is accepted and has no errors, we expect the server to respond
 }
 ````
 
-If there was something wrong with the submission:
+If there was something wrong with the submission, the server should inform the client in the response:
 ````json
 {
    "success": 0,
@@ -52,5 +50,5 @@ It would also help with i18n later down the line as the client I originally wrot
 
 I've decided to try to move away from jQuery and other big libraries as much as possible, because all the good browsers are now really good at handling pure JS, so I'd like to leverage the performance benefits there.
 
-## Old IE notice... 
-If you need to support IE <10, stick to jQuery. 
+### Old IE notice... 
+If you need to support IE <11, just use jQuery. 
