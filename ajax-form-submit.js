@@ -4,8 +4,8 @@
  * Rudimentary inline error support is implemented in the form of highlighting which form fields have errors.
  * Several class names embedded in this code would likely need to be changed when reused, but inline errors are quite a tight integration anyway so that should be expected.
  */
-const form = document.querySelector( '.contact-form' ),
-      errorsList = document.querySelector( '.errors-list' );
+const form = document.querySelector( '.contact-form' );
+const errorsList = document.querySelector( '.errors-list' );
 
 form.addEventListener( 'submit', e => {
   e.preventDefault();
